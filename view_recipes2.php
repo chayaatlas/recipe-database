@@ -22,6 +22,7 @@ echo '<h1>'. $f["recipe_name"] . '</h1>
 	<p style="margin: 1% 0% 0% 15%; width: 20%; text-align: left" >' . $f["ingredients"] . '</p>
 	<p style="margin: 1% 0% 0% 10%; width: 40%; text-align: justify" >' . $f["directions"] . '</p>
 	</div>
+	<p style="margin-top: 15%; float: left"><a href="javascript:history.go(-1)" >back</a></p>
 	</div>';
 	
 mysqli_close($dbc);
