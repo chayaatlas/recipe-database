@@ -1,0 +1,147 @@
+/* general */
+* {
+	margin: 0px;
+}
+body {
+	position: relative;
+	background-color: #dbdbff;
+}
+/* header */
+#header {
+	background-color: #000078;
+	color: white;
+	width: 100%;
+	text-align: center;
+}
+#header h1 {
+	font-family: open sans extrabold, times new roman;
+	padding: 1%;
+	font-size: 3.5em;
+	width: 100%;
+}
+/* navigation pane */
+ul {
+	padding: 0px;
+}
+
+#nav li {
+	box-sizing: border-box;
+	display: block;
+	float: left;
+	width: 25%;
+	background-color: white;
+	text-align: center;
+	color: #000078;
+}
+#nav li a {
+	font-family: open sans semibold, gadugi, meiryo, comic sans ms;
+	text-decoration: none;
+	font-size: 1.5em;
+}
+#nav li:hover {
+	background-color: black;
+}
+#nav li a:hover {
+	color: white;
+}
+/* content */
+#content h1 {
+	font-family: open sans extrabold, times new roman;
+	margin-top: 5%;
+	text-align: center;
+}
+#content p {
+	font-family: open sans semibold, gadugi, meiryo, comic sans ms;
+	font-size: 1.2em;
+	text-align: center;
+}
+#content h2 {
+	font-family: open sans semibold, gadugi, meiryo, comic sans ms;
+	font-size: 1.5em;
+}
+.feedback {
+	margin: 8%;
+}
+/* content - form */
+#content form {
+	margin: 1% auto;
+	text-align: center;
+}
+#content form p {
+	font-size: 1.1em;
+}
+#content input, textarea {
+	font-family: open sans semibold, gadugi, meiryo, comic sans ms;
+	margin: 1% auto;
+	padding: 2px;
+}
+#content label {
+	font-family: open sans semibold, gadugi, meiryo, comic sans ms;
+}
+/* content - table*/
+#content table {
+	margin: 1% auto;
+	font-family: open sans semibold, gadugi, meiryo, comic sans ms;
+}
+td.tabled {
+	padding: 2px 35px 5px 5px;
+	border-right: 1px solid gray;
+	border-left: 1px solid gray;
+	font-size: 1.2em;
+	border-bottom: 1px solid rgb(171,171,171);
+}
+th.tabled{
+	border-bottom: 2px solid gray;
+}
+th.tabled a {
+	text-decoration: none;
+	font-size: 1.3em;
+	color: #000078;
+}
+td.tabled a {
+	text-decoration: none;
+	color: #000078;
+}
+/* content - recipe ingredients/directions */
+#ingdir h2, #ingdir p {
+	box-sizing: border-box; 
+	display: inline-block; 
+	float: left; 
+}
+/* pagination page numbers */
+#page {
+	width: max-content;
+	margin: auto;
+}
+#page p {
+	margin: 0 auto;
+	float: left;
+	text-align: center;
+	padding: 5px;
+	color: #000078;
+	font-size: 1.3em;
+}
+#page a {
+	color: #000078;
+}
+/* everything besides for footer */
+#header_and_content {
+	min-height: calc(100vh - 56px);  /*calculation works in chrome, in which the adress bar makes issues.*/
+	padding-bottom: 2em;
+}
+/* footer */
+#footer {
+	position: fixed;
+	bottom: 0;
+	height: 2em;
+	width: 100%;
+	background-color: white;
+	text-align: center;
+	font-family: open sans semibold, gadugi, meiryo, comic sans ms;
+}
+#footer p {
+	padding-top: 3px;
+}
+#footer a {
+	color: black;
+}
