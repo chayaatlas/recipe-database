@@ -82,8 +82,8 @@ if ($num < 1) {
 	while ($row = mysqli_fetch_array($r2, MYSQLI_ASSOC)) {
 		echo "<tr>
 		<td class='tabled' align='left' ><a href='view_recipes2.php?recipe_id=". $row['recipe_id'] ."' >". space($row['recipe_name']) ."</a></td>
-		<td class='tabled'  align='left' >". space($row['creator']) ."</td>
-		<td class='tabled'  align='left' >". space($row['date_submitted']) ."</td>
+		<td class='tabled'  align='left' >". $row['creator'] ."</td>
+		<td class='tabled'  align='left' >". date('F d, Y',strtotime($row['date_submitted'])) ."</td>
 		</tr>";
 	}
 	echo "</table>";
